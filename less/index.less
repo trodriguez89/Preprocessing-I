@@ -57,6 +57,9 @@ table {
 @boldHeadings : bold;
 @paragraphFont: 'Barlow', sans-serif;
 
+.align(){
+	text-align: center;
+}
 
 html, body {
 	height: 100%;
@@ -139,7 +142,7 @@ background-color: #FEE1CC;
 
 .img-container {
 	@media (max-width: 500px){
-	text-align: center;
+		.align();
 
 } // this closes media query
 
@@ -151,7 +154,7 @@ background-color: #FEE1CC;
 	padding: 2%;
 
 	@media (max-width: 500px) {
-		text-align: center;
+		.align();
 
 	} // this ends media query for 500px for .top-section
 
@@ -165,7 +168,7 @@ background-color: #FEE1CC;
 	padding-bottom: 50px;
 
 	@media (max-width: 500px) {
-		text-align: center;
+		.align();
 
 	} // this ends media query for 500px for .quick-container
 
@@ -225,6 +228,7 @@ background-color: #FEE1CC;
 
 			a {
 				border: 1px solid grey;
+				
 			} // this ends a
 
 		} // this ends nav
@@ -273,7 +277,9 @@ background-color: #FEE1CC;
 	button {
 		padding: 1%;
 		border-radius: 5px;
+
 	} // this ends button
+
 } // this ends .contact
 
 
