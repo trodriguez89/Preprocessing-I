@@ -4,8 +4,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <style>
-    @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); @import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Barlow&display=swap');
   </style>
   <title>Resume - Thomas Rodriguez</title>
 
@@ -44,7 +47,8 @@
   <div class="middle">
     <div class="listen-up">
       <h2>About Me...</h2>
-      <p>Why should you hire me? I am self-motivated, hard working and a fast learner. I enjoy difficult challenges and pride myself on problem solving.</p>
+      <p>Why should you hire me? I am self-motivated, hard working and a fast learner. I enjoy difficult challenges and
+        pride myself on problem solving.</p>
     </div>
     <div class="skills">
       <h2>My Skills:</h2>
@@ -52,8 +56,8 @@
         <a>HTML</a>
         <a>CSS</a>
         <a>Javascript</a>
-        <a>Stuff</a>
-        <a>Stuff</a>
+        <a>React</a>
+
       </nav>
     </div>
   </div>
@@ -62,24 +66,52 @@
       <h2>Work History</h2>
       <div class="cdcr">
         <h3>California Department of Corrections and Rehabilitation 2017 - 2019</h3>
-        <p>Scheduled patients for Dental appointments in 4 different Dental clinics. Proficient in using the Dental Scheduling and Tracking system and Dentrix scheduling program. Acted as Associate Health Program Adviser; duties included compiling various compliance reports and reporting compliance updates to executive staff. Revised Dental Local Operating Procedures in line with Regional Policies and Procedures. Administrative duties included Prosthetic shipping and tracking, scanning and seding time off requests to staff, auditing different aspects of clinical duties to verify compliance, revising weekly schedules for staff, and revising schedules in accordance with time off requests submitted.</p>
+        <p>Scheduled patients for Dental appointments in 4 different Dental clinics. Proficient in using the Dental
+          Scheduling and Tracking system and Dentrix scheduling program. Acted as Associate Health Program Adviser;
+          duties included compiling various compliance reports and reporting compliance updates to executive staff.
+          Revised Dental Local Operating Procedures in line with Regional Policies and Procedures. Administrative duties
+          included Prosthetic shipping and tracking, scanning and seding time off requests to staff, auditing different
+          aspects of clinical duties to verify compliance, revising weekly schedules for staff, and revising schedules
+          in accordance with time off requests submitted.</p>
       </div>
       <div class="sbs">
         <h3>San Benito Supply 2015 - 2017</h3>
-        <p>ACI Certified Field Technician in concrete. Quality Control Manager. Traveled to various job sites to collect concrete samples and test for strength and durability. Entered data information and communicated with supervisors information on testing. Proficient in
-            Microsoft Word and Excel.</p>
+        <p>ACI Certified Field Technician in concrete. Quality Control Manager. Traveled to various job sites to collect
+          concrete samples and test for strength and durability. Entered data information and communicated with
+          supervisors information on testing. Proficient in
+          Microsoft Word and Excel.</p>
       </div>
       <div class="target">
         <h3>Target Pharmacy 2009 - 2014</h3>
         <p>Handled large script counts swiftly and effectively. Detail oriented, careful and meticulous.
-            Correctly calculated dosages, dispensed medications, prepared prescription labels and
-            filled prescriptions. Used the pharmacy’s computer system(PDX)effectively and swiftly to
-            access information such as patients prescriptions information, prescriber data, drug
-            selection and insurance billing. Research to resolve dosage conflicts, problems with
-            prescriptions, drug interactions, insurance issues and other problems.</p>
+          Correctly calculated dosages, dispensed medications, prepared prescription labels and
+          filled prescriptions. Used the pharmacy’s computer system(PDX)effectively and swiftly to
+          access information such as patients prescriptions information, prescriber data, drug
+          selection and insurance billing. Research to resolve dosage conflicts, problems with
+          prescriptions, drug interactions, insurance issues and other problems.</p>
       </div>
     </div>
   </section>
+  <section class="contact">
+    <div class="contact-container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+        <div class="submit-button">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+
   <footer>
     <small>&copy; Copyright Thomas Rodriguez 2019</small>
   </footer>

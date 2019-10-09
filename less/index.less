@@ -110,11 +110,16 @@ header {
 	display: flex;
 	justify-content: flex-end;
 	
-
 	nav {
 		width: 50%;
 		display: flex;
 		justify-content: space-around;
+		
+
+		@media (max-width: 500px) {
+			width: 100%;
+		} // this ends media query for 500px
+
 
 		a {
 			text-decoration: none;
@@ -126,22 +131,31 @@ header {
 } // this ends header
 
 .img-button-container {
-	width: 800px;
-	display: flex;
-	flex-direction: column;
-	margin: 0 auto;
-	background-color: #FEE1CC;
-	
-	@media (max-width: 500px) {
-	.img-container {
-		border: 2px solid red;
-	} // this ends .img-container
-}
+width: 800px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+background-color: #FEE1CC;
 
-	.top-section {
-		
-		padding: 2%;
-	} // this ends .top-section 
+.img-container {
+	@media (max-width: 500px){
+	text-align: center;
+
+} // this closes media query
+
+} // this ends .img-container
+
+
+.top-section {
+	
+	padding: 2%;
+
+	@media (max-width: 500px) {
+		text-align: center;
+
+	} // this ends media query for 500px for .top-section
+
+} // this ends .top-section 
 
 } // this ends .img-button-container
 
@@ -149,6 +163,12 @@ header {
 	border-top: 1px solid grey;
 	padding: 2%;
 	padding-bottom: 50px;
+
+	@media (max-width: 500px) {
+		text-align: center;
+
+	} // this ends media query for 500px for .quick-container
+
 
 	.button {
 		padding-top: 20px;
@@ -169,9 +189,20 @@ header {
 	display: flex;
 	justify-content: space-between;
 
+	@media(max-width: 500px){
+		flex-direction: column;
+	} // this ends media query:500px for .middle
+
+
 	.listen-up {
 		width: 45%;
 		padding: 2%;
+
+		@media(max-width: 500px) {
+			width: 100%;
+
+		} // this ends media query:500px for .listen-up
+
 	} //this ends .listen-up
 
 	.skills {
@@ -179,6 +210,12 @@ header {
 		flex-direction: column;
 		width: 45%;
 		padding: 2%;
+
+		@media(max-width: 500px) {
+			width: 100%;
+			
+		} // this ends media query:500px for .skills
+
 
 		nav {
 			padding: 2%;
@@ -220,6 +257,7 @@ header {
 
 		.target {
 			padding: 1%;
+
 		} // this ends .target
 
 
@@ -227,7 +265,31 @@ header {
 
 } // this ends .bottom
 
+.contact {
+	
+	width: 800px;
+	margin: 0 auto;
 
+	button {
+		padding: 1%;
+		border-radius: 5px;
+	} // this ends button
+} // this ends .contact
+
+
+
+
+
+input[type=text], textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px;
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
 
 
 
