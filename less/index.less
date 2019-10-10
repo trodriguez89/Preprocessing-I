@@ -30,7 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 1.5;
 }
 ol, ul {
 	list-style: none;
@@ -50,10 +50,258 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+
+@boldHeadings : bold;
+@paragraphFont: 'Barlow', sans-serif;
+
+.align(){
+	text-align: center;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
 }
 
+
+ body {
+	font-family: 'Quicksand', sans-serif;
+	 
+ }
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: @boldHeadings
+}
+
+p {
+	font-size: 18px;
+	font-family: 'Barlow', sans-serif;
+}
+
+a {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: @boldHeadings
+}
+
+
+img {
+	width: 50%;
+	padding: 2%;
+}
+
+footer {
+	font-size: 18px;
+}
+
+
+
+
+header {
+	margin: 0 auto;
+	width: 800px;
+	display: flex;
+	justify-content: flex-end;
+	
+	nav {
+		width: 50%;
+		display: flex;
+		justify-content: space-around;
+		
+
+		@media (max-width: 500px) {
+			width: 100%;
+		} // this ends media query for 500px
+
+
+		a {
+			text-decoration: none;
+
+		} // this ends a
+
+	} // this ends nav
+
+} // this ends header
+
+.img-button-container {
+width: 800px;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+background-color: #FEE1CC;
+
+.img-container {
+	@media (max-width: 500px){
+		.align();
+
+} // this closes media query
+
+} // this ends .img-container
+
+
+.top-section {
+	
+	padding: 2%;
+
+	@media (max-width: 500px) {
+		.align();
+
+	} // this ends media query for 500px for .top-section
+
+} // this ends .top-section 
+
+} // this ends .img-button-container
+
+.quick-container {
+	border-top: 1px solid grey;
+	padding: 2%;
+	padding-bottom: 50px;
+
+	@media (max-width: 500px) {
+		.align();
+
+	} // this ends media query for 500px for .quick-container
+
+
+	.button {
+		padding-top: 20px;
+
+		button {
+			background-color: #FFEABF;
+			padding: 1%;
+			border-radius: 5px;
+		}
+
+	} // this ends .button
+
+} // this ends .quick-container
+
+.middle {
+	width: 800px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+
+	@media(max-width: 500px){
+		flex-direction: column;
+	} // this ends media query:500px for .middle
+
+
+	.listen-up {
+		width: 45%;
+		padding: 2%;
+
+		@media(max-width: 500px) {
+			width: 100%;
+
+		} // this ends media query:500px for .listen-up
+
+	} //this ends .listen-up
+
+	.skills {
+		display: flex;
+		flex-direction: column;
+		width: 45%;
+		padding: 2%;
+
+		@media(max-width: 500px) {
+			width: 100%;
+			
+		} // this ends media query:500px for .skills
+
+
+		nav {
+			padding: 2%;
+			display: flex;
+			flex-direction: column;
+			text-align: center;
+
+			a {
+				border: 1px solid grey;
+				
+			} // this ends a
+
+		} // this ends nav
+
+	} // this ends .stuff
+
+} // this ends .middle
+
+
+
+.bottom {
+	display: flex;
+	justify-content: center;
+	width: 800px;
+	margin: 0 auto;
+	border-top: 1px solid grey;
+
+	.work-history {
+		padding: 2%;
+		
+		.cdcr {
+			border-bottom: 1px solid grey;
+			padding: 1%;
+		} // this end .cdcr
+		
+		.sbs {
+			border-bottom: 1px solid gray;
+			padding: 1%;
+		} // this ends .sbs
+
+		.target {
+			padding: 1%;
+
+		} // this ends .target
+
+
+	} // this ends .work-history
+
+} // this ends .bottom
+
+.contact {
+	
+	width: 800px;
+	margin: 0 auto;
+
+	button {
+		padding: 1%;
+		border-radius: 5px;
+
+	} // this ends button
+
+} // this ends .contact
+
+
+
+
+
+input[type=text], textarea {
+	width: 100%; 
+	padding: 12px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box; 
+	margin-top: 6px; 
+	margin-bottom: 16px;
+	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+
+
+
+footer {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
